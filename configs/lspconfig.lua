@@ -66,13 +66,6 @@ lspconfig.typst_lsp.setup({
   root_dir = lspconfig.util.root_pattern("*.typ")
 })
 
-lspconfig.svelte.setup({
-  on_attach = on_attach,
-  capabilities = capabilities,
-  root_dir = lspconfig.util.root_pattern("package.json", "svelte.config.js"),
-  filetypes = { "svelte" } 
-})
-
 lspconfig.emmet_ls.setup({
   on_attach = on_attach,
   capabilities = capabilities,
